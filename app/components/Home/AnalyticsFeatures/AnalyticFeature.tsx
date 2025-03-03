@@ -3,6 +3,11 @@ import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
 const AnalyticFeature = () => {
+  const analyticfeatures = [
+    "Chat prompt module supported",
+    "Enjoy unlimited features by paid plan",
+    "Manage ultimate conversation",
+  ];
   return (
     <div className="pt-24 pb-16">
       {/* Define grid */}
@@ -26,31 +31,25 @@ const AnalyticFeature = () => {
             Powerful analytics tool that put you in control and are fully
             customizable
           </h1>
-          <p className="mt-4 text-gray-600 text-sm fomt-medium leading-[2rem]">
+          <p className="mt-4 text-gray-600 text-sm font-medium leading-[2rem]">
             Discover where your audience comes from and what they love. Get deep
             insights into user preferences and behavior. Make smarter marketing
             decisions with real-time data. Turn visitors into loyal customers
             with actionable insights and take full control with customizable
             analytics dashboards. Measure success with real-time data and
-            reports. From small startups to enterprises—we scale with you. Make
+            reports. From small startups to enterprises we scale with you. Make
             smarter, data-driven decisions effortlessly. Would you like any
-            tweaks to fit your brand's tone.
+            tweaks to fit your brand&apos;s tone.
           </p>
           <ul className="mt-7 space-y-2 text-gray-800">
-            <li className="flex items-center font-semibold">
-              <FaCheckCircle className="text-green-500 mr-2" />
-              Chat prompt module supported
-            </li>
-            <li className="flex items-center font-semibold">
-              <FaCheckCircle className="text-green-500 mr-2" />
-              Enjoy unlimited features by paid plan
-            </li>
-            <li className="flex items-center font-semibold">
-              <FaCheckCircle className="text-green-500 mr-2" />
-              Manage ultimate coversation
-            </li>
+            {analyticfeatures.map((analyticfeature, index) => (
+              <li key={index} className="flex items-center font-semibold">
+                <FaCheckCircle className="text-green-500 mr-2" />
+                {analyticfeature}
+              </li>
+            ))}
           </ul>
-          <button className="mt-8 px-8 py-3 bg-gray-100 text-gray-800 font-semibold rounded-full hover:bg-blue-800 -transition-all  duration-200 hover:text-white">
+          <button className="mt-8 px-8 py-3 bg-gray-100 text-gray-800 font-semibold rounded-full hover:bg-blue-800 transition-all  duration-200 hover:text-white">
             Explore More &rarr;
           </button>
         </div>
