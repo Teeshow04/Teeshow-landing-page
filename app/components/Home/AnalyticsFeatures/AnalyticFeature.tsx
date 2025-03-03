@@ -34,7 +34,7 @@ const AnalyticFeature = () => {
             analytics dashboards. Measure success with real-time data and
             reports. From small startups to enterprises—we scale with you. Make
             smarter, data-driven decisions effortlessly. Would you like any
-            tweaks to fit your brand's tone?
+            tweaks to fit your brand's tone.
           </p>
           <ul className="mt-7 space-y-2 text-gray-800">
             <li className="flex items-center font-semibold">

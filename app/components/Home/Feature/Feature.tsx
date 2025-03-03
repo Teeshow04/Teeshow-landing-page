@@ -55,7 +55,7 @@ const Feature = () => {
     <div className="bg-pink-50 pt-20 pb-20" id="Feature">
       <div className="w-[80%] mx-auto text-center">
         <h1 className="mt-6 text2xl md:text-3xl capitalize font-bold text-center">
-          Its Everything you will ever need
+          It's Everything you will ever need
         </h1>
         <div className="grid mt-16 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
